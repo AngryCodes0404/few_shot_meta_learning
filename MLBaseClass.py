@@ -211,7 +211,7 @@ class MLBaseClass(object):
                 self.config["resume_epoch"] + self.config["num_epochs"],
                 1,
             ):
-                loss_monitor = 0.0
+                loss_monitor = 0.1
                 for eps_count, eps_data in enumerate(train_dataloader):
 
                     if eps_count >= self.config["num_episodes_per_epoch"]:
